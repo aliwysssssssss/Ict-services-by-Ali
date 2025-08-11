@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ali's Tech Services: AI applications, game development, IT support, website creation, and file conversion." />
+  <title>Ali's Tech Services</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Favicon (replace 'favicon.ico' with your icon file if you add one) -->
+  <link rel="icon" href="favicon.ico" />
+  
+  <style>
+    /* Reset & base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #222;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #005ea2;
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgb(0 94 162 / 0.3);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2.5rem auto 3rem;
+      padding: 0 1.25rem;
+      flex-grow: 1;
+    }
+    h2 {
+      color: #005ea2;
+      border-bottom: 3px solid #005ea2;
+      display: inline-block;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .service-card {
+      background: white;
+      padding: 1.8rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      cursor: default;
+    }
+    .service-card:hover {
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      margin-top: 0;
+      color: #004378;
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+    .service-card p {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    section.contact-section {
+      margin-top: 3.5rem;
+      text-align: center;
+    }
+    section.contact-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+      color: #333;
+    }
+    .contact-btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: #005ea2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgb(0 94 162 / 0.4);
+      transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    }
+    .contact-btn:hover,
+    .contact-btn:focus {
+      background: #003f70;
+      box-shadow: 0 6px 16px rgb(0 63 112 / 0.6);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      background: #e3e7eb;
+      color: #555;
+      box-shadow: inset 0 1px 4px rgb(0 0 0 / 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ali's Expert Tech Services</h1>
+    <p>Innovative Solutions in AI, Game Development, IT Support &amp; More</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>What I Offer</h2>
+      <div class="services">
+        <article class="service-card" aria-label="AI Applications Service">
+          <h3>AI Applications</h3>
+          <p>Develop and integrate intelligent AI-powered solutions to automate processes, analyze data, and enhance decision-making.</p>
+        </article>
+        <article class="service-card" aria-label="File Conversion Service">
+          <h3>File Conversion</h3>
+          <p>Efficiently convert files between various formats ensuring quality and usability across platforms and devices.</p>
+        </article>
+        <article class="service-card" aria-label="Game Development Service">
+          <h3>Game Development</h3>
+          <p>Create engaging and interactive games with smooth gameplay, immersive graphics, and optimized performance.</p>
+        </article>
+        <article class="service-card" aria-label="Support and IT Service">
+          <h3>Support &amp; IT</h3>
+          <p>Reliable IT support services including troubleshooting, maintenance, and technical assistance to keep your systems running smoothly.</p>
+        </article>
+        <article class="service-card" aria-label="Website Development Service">
+          <h3>Website Development</h3>
+          <p>Design and build responsive, user-friendly websites tailored to your business or personal needs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-label="Contact Section">
+      <h2>Get in Touch</h2>
+      <p>If you want to discuss your project or need assistance, don’t hesitate to contact me!</p>
+      <a href="mak1031a@gmail.com" class="contact-btn">Contact Me</a>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Ali's Tech Services. All rights reserved.
+  </footer>
+</body>
+</html>
